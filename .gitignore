@@ -1,0 +1,13 @@
+tmp/
+slakware/
+source/
+
+bochs/scsi
+bochs/color144
+bochs/bochsout.txt
+bochs/disk.img
+bochs/diskapp.img
+bochs/disksrc.img
+
+qemu/disk.img
+qemu/disksrc.img
