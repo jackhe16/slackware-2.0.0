@@ -25,9 +25,13 @@ do
 
         * )
             # echo "downloading $item from $fileurl ..."
-            filebaseurl=${domain}
-            if [ ! -z ${currentitem} ]; then filebaseurl+=/${currentitem}; fi
-            wget ${filebaseurl}/${item}
+            if [ "$item" -gt 0 ] 2>/dev/null ;then
+                echo "$item is number."
+            else
+                filebaseurl=${domain}
+                if [ ! -z ${currentitem} ]; then filebaseurl+=/${currentitem}; fi
+                wget ${filebaseurl}/${item}
+            fi
         ;;
     esac
 done
