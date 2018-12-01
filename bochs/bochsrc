@@ -26,7 +26,7 @@ boot: c
 #config_interface: textconfig
 #config_interface: wx
 
-#display_library: x
+display_library: x
 # other choices: win32 sdl wx carbon amigaos beos macintosh nogui rfb term svga
 
 # where do we send log messages?
@@ -45,5 +45,4 @@ keyboard: keymap=$BXSHARE/keymaps/x11-pc-us.map
 
 #pci: enabled=1, chipset=i440fx, slot1=pcivga, slot2=ne2k
 #sound: driver=default, waveout=/dev/dsp
-#ne2k: ioaddr=0x300, irq=9, mac=b0:c4:20:00:00:00, ethmod=linux, ethdev=eno1
-#ne2k: ioaddr=0x300, irq=9, mac=b0:c4:20:00:00:00, ethmod=linux, ethdev=enp4s0f2
+ne2k: ioaddr=0x300, irq=10, mac=b0:c4:20:00:00:00, ethmod=linux, ethdev=enp4s0f2
